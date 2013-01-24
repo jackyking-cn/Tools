@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>字符串转换工具</title>
+<style>
+h1 {
+	font-size: 16px;
+	display: none;
+}
+
+h2 {
+	font-size: 14px;
+}
+
+p, textarea {
+	font-size: 14px;
+}
+
+textarea {
+	background-color: black;
+	color: lime;
+	padding: 5px;
+}
+</style>
+<script src="script/script.js"></script>
+</head>
+<body>
+	<h1>字符串转换工具</h1>
+	<div>
+		<h2>待处理的字符串：</h2>
+		<textarea id="source" rows="10" cols="80"></textarea>
+	</div>
+	<div>
+		<button onclick="convertToString('\'')">Covert to String by '</button>
+		<button onclick="convertToString('&quot;')">Covert to String by "</button>
+	</div>
+	<div>
+		<button onclick="convertToHex()">Convert to hexadecimal string (without ', ")</button>
+		<button onclick="convertToText()">Convert to text (without ', ")</button>
+	</div>
+	<div>
+		<button onclick="encodeByBase64()">Encode By base64</button>
+		<button onclick="decodeByBase64()">Decode By base64</button>
+	</div>
+	<div>
+		<h2>转换结果：</h2>
+		<textarea id="result" rows="10" cols="80"></textarea>
+	</div>
+</body>
+</html>
